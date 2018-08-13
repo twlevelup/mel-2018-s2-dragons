@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+        - image: circleci/node:8.1.4
+    steps:
+      - run: "false"
+    branches:
+      ignore:
+        - gh-pages
