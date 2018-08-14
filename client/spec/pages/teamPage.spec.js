@@ -27,5 +27,11 @@ describe("TeamPage", () => {
       const page = new TeamPage();
       expect(page.template()).toContain("Lam");
     });
+
+    it('should contain team members names', () => {
+      const page = new TeamPage();
+      expect(page.template()).toContain("Jessie");
+  });
+
   });
 });
