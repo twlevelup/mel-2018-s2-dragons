@@ -1,5 +1,15 @@
 const TeamPage = require("../../src/js/pages/teamPage");
-
+const teamMembers = [
+					"Lu-Vuong",
+					"Lucy",
+					"Lam",
+					"Jessie",
+					"Akshay",
+					"Bernardo",
+					"Brandon",
+					"Minoli",
+					"Nimisha"
+					];
 describe("TeamPage", () => {
   let watchFace;
   beforeEach(() => {
@@ -13,26 +23,10 @@ describe("TeamPage", () => {
       expect(page.template()).toContain("<h1>Made by:</h1>");
     });
 
-    it("should contain team members name", () => {
-      const page = new TeamPage();
-      expect(page.template()).toContain("Lu-Vuong");
-    });
-
-    it("should contain team members names", () => {
-      const page = new TeamPage();
-      expect(page.template()).toContain("Lucy");
-    });
-
-    it("should contain team members names", () => {
-      const page = new TeamPage();
-      expect(page.template()).toContain("Lam");
-    });
-
     it('should contain team members names', () => {
       const page = new TeamPage();
-      expect(page.template()).toContain("Jessie");
-	   expect(page.template()).toContain("Akshay");
-  });
+	  teamMembers.forEach( member => expect(page.template()).toContain(member));
+	});
 
   });
 });
