@@ -3,7 +3,10 @@ const compiledTemplate = require("../../templates/feedbackPage.hbs");
 
 class FeedbackPage extends BasePage {
   template() {
-    return compiledTemplate();
+    const context = {
+      message: this.props.message
+    };
+    return compiledTemplate(context);
   }
 }
 

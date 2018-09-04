@@ -9,8 +9,8 @@ describe("The Feedback Page", () => {
 
   describe("#template", () => {
     it("should contain the correct text", () => {
-      const page = new FeedbackPage();
-      expect(page.template()).toContain("Feedback");
+      const page = new FeedbackPage({ message: "Success" });
+      expect(page.template()).toContain("Success");
     });
   });
 });
