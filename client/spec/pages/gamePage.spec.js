@@ -17,4 +17,9 @@ describe("gamePage", () => {
     expect(page.template()).toContain("<p>Option1</p>");
     expect(page.template()).toContain("<p>Option2</p>");
   });
+
+  it('should have image tag', () => {
+    const page = new GamePage(); 
+    expect(page.template()).toContain('<img src="https://png.pngtree.com/element_pic/00/03/75/34568be81f30237.jpg">');
+  });
 });
