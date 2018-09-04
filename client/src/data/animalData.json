@@ -1,0 +1,12 @@
+{
+    "animals": [
+        {
+            "filename": "cat.jpg",
+            "animal": "cat"
+        },
+        {
+            "filename": "dog.jpg",
+            "animal": "dog"
+        }
+    ]
+}

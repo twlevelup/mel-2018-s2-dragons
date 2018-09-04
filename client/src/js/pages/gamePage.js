@@ -6,5 +6,11 @@ class GamePage extends BasePage {
     return compiledTemplate();
   }
 }
+// index = rand();
+// Get animals[index]
+// Display animals[index].filename
+// Display animals[index].animal as the correct answer
 
+// Randomize another number that's different from index
+// Get animals[new random number].animal to display as the incorrect answer
 module.exports = GamePage;
