@@ -1,6 +1,6 @@
 const HomePage = require("./pages/homePage");
 const ContactsPage = require("./pages/contactsPage");
-const GameHomePage = require('./pages/gameHomePage');
+const GameHomePage = require("./pages/gameHomePage");
 const TeamPage = require("./pages/teamPage");
 const FourOhFour = require("./pages/404Page");
 const FeedbackPage = require("./pages/feedbackPage");
