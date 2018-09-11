@@ -14,8 +14,8 @@ describe("HomePage", () => {
     });
   });
 
-  describe("#rightButtonEvent", () => {
-    it("goes to contacts page", () => {
+  describe('#rightButtonEvent', () => {
+    it('goes to game home page', () => {
       const props = {
         navigate: () => {}
       };
@@ -23,7 +23,7 @@ describe("HomePage", () => {
       spyOn(page, "navigate");
 
       page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith("contacts");
+      expect(page.navigate).toHaveBeenCalledWith('gameHomePage');
     });
   });
 

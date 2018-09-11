@@ -1,7 +1,7 @@
 require('../../styles/pages/home.scss');
 
 const BasePage = require('watch-framework').BasePage;
-const logo = require('../../images/logo.png')
+const logo = require('../../images/logo.png');
 const date = new Date(Date.now()).toLocaleString().split(",")[0];
 const time = new Date(Date.now()).toLocaleString().split(",")[1];
 const compiledTemplate = require("../../templates/homePage.hbs");
@@ -17,7 +17,7 @@ class HomePage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('contacts');
+    this.navigate('gameHomePage');
   }
 
   topButtonEvent() {

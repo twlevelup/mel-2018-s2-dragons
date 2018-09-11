@@ -1,3 +1,30 @@
 #home {
   font-style: italic;
 }
+#gameHomePage {
+  background: url('../../images/gameHomePage_background.png');
+  background-size: cover;
+  height: 255px;
+  width: 240px;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+#gameHomePage > img {
+    border: 0;
+    height: 90px;
+    width: 120px;
+    padding-left: 70px;
+}
+
+
+
+
