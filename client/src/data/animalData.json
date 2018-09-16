@@ -1,12 +1,28 @@
 {
     "animals": [
         {
-            "filename": "cat.jpg",
+            "filename": "images/cat.png",
             "animal": "cat"
         },
         {
-            "filename": "dog.jpg",
+            "filename": "images/dog.png",
             "animal": "dog"
+        },
+        {
+            "filename": "images/hen.png",
+            "animal": "hen"
+        },
+        {
+            "filename": "images/pig.png",
+            "animal": "pig"
+        },
+        {
+            "filename": "images/cow.png",
+            "animal": "cow"
+        },
+        {
+            "filename": "images/rat.png",
+            "animal": "rat"
         }
     ]
 }
