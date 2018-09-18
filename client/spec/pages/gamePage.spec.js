@@ -20,6 +20,6 @@ describe("gamePage", () => {
 
   it('should have image tag', () => {
     const page = new GamePage(); 
-    expect(page.template()).toContain('<img src="https://png.pngtree.com/element_pic/00/03/75/34568be81f30237.jpg">');
+    expect(page.template()).toContain('<img src="../src/images">');
   });
 });
