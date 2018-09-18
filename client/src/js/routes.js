@@ -9,6 +9,7 @@ const GamePage = require("./pages/gamePage");
 module.exports = {
   "/": HomePage,
   contacts: ContactsPage,
+  gameHomePage: GameHomePage,
   team: TeamPage,
   "404": FourOhFour,
   feedback: FeedbackPage,
