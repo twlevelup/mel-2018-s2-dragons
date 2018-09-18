@@ -12,5 +12,6 @@ module.exports = {
   team: TeamPage,
   "404": FourOhFour,
   feedback: FeedbackPage,
-  game: GamePage
+  game: GamePage,
+  gameHomePage: GameHomePage
 };
