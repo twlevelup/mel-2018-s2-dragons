@@ -1,4 +1,6 @@
 const GamePage = require("../../src/js/pages/gamePage");
+const animalData = require("../../src/data/animalData.json");
+const randomizer = require("../../src/helpers/randomiserHelper");
 
 describe("gamePage", () => {
   let watchFace;
@@ -14,12 +16,18 @@ describe("gamePage", () => {
 
   it("should have two options", () => {
     const page = new GamePage();
-    expect(page.template()).toContain("<p>Option1</p>");
-    expect(page.template()).toContain("<p>Option2</p>");
+    const animalNames = animalData.animals.map(
+      animalObject => animalObject.animal
+    );
+    const selectedAnimalIsInJsonFile =
+      animalNames.includes(page.gameData.correctOption) &&
+      animalNames.includes(page.gameData.incorrectOption);
+
+    expect(selectedAnimalIsInJsonFile).toEqual(true);
   });
 
-  it('should have image tag', () => {
-    const page = new GamePage(); 
+  it("should have image tag", () => {
+    const page = new GamePage();
     expect(page.template()).toContain('<img src="../src/images">');
   });
 });
