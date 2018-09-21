@@ -25,4 +25,17 @@ describe("GameHomePage", () => {
       expect(page.navigate).toHaveBeenCalledWith("/");
     });
   });
+
+  describe('#rightButtonEvent', () => {
+    it('goes to game page', () => {
+      const props = {
+        navigate: () => { },
+      };
+      const page = new GameHomePage(props);
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('gamePage');
+    });
+  });
 });

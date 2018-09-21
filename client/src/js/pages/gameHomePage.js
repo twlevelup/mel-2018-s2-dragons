@@ -13,6 +13,10 @@ class GameHomePage extends BasePage {
   leftButtonEvent() {
     this.navigate("/");
   }
+
+  rightButtonEvent() {
+    this.navigate('gamePage');
+  }
 }
 
 module.exports = GameHomePage;
