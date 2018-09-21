@@ -1,28 +1,28 @@
 {
-    "animals": [
-        {
-            "filename": "images/cat.png",
-            "animal": "cat"
-        },
-        {
-            "filename": "images/dog.png",
-            "animal": "dog"
-        },
-        {
-            "filename": "images/hen.png",
-            "animal": "hen"
-        },
-        {
-            "filename": "images/pig.png",
-            "animal": "pig"
-        },
-        {
-            "filename": "images/cow.png",
-            "animal": "cow"
-        },
-        {
-            "filename": "images/rat.png",
-            "animal": "rat"
-        }
-    ]
+  "animals": [
+    {
+      "filename": "/client/src/images/cat.png",
+      "animal": "cat"
+    },
+    {
+      "filename": "/client/src/images/dog.png",
+      "animal": "dog"
+    },
+    {
+      "filename": "/client/src/images/hen.png",
+      "animal": "hen"
+    },
+    {
+      "filename": "/client/src/images/pig.png",
+      "animal": "pig"
+    },
+    {
+      "filename": "/client/src/images/cow.png",
+      "animal": "cow"
+    },
+    {
+      "filename": "/client/src/images/rat.png",
+      "animal": "rat"
+    }
+  ]
 }

@@ -11,5 +11,13 @@ class GamePage extends BasePage {
   template() {
     return compiledTemplate(this.gameData);
   }
+
+  topButtonEvent() {
+    this.navigate("feedback", { message: "success" });
+  }
+
+  bottomButtonEvent() {
+    this.navigate("feedback", { message: "try again" });
+  }
 }
 module.exports = GamePage;

@@ -9,11 +9,6 @@ describe("gamePage", () => {
     watchFace = document.getElementById("watch-face");
   });
 
-  it("should have a template", () => {
-    const page = new GamePage();
-    expect(page.template()).toContain("<h1>Game Page</h1>");
-  });
-
   it("should have two options", () => {
     const page = new GamePage();
     const animalNames = animalData.animals.map(
@@ -28,6 +23,46 @@ describe("gamePage", () => {
 
   it("should have image tag", () => {
     const page = new GamePage();
-    expect(page.template()).toContain('<img src>');
+    expect(page.template()).toContain("img src");
+  });
+
+  it("should have a image in the animal data json file", () => {
+    const page = new GamePage();
+    const animalImages = animalData.animals.map(
+      animalObject => animalObject.filename
+    );
+    const imageIsDisplayed = animalImages.includes(page.gameData.image);
+
+    expect(imageIsDisplayed).toEqual(true);
+  });
+
+  describe("#topButtonEvent", () => {
+    it("goes to feedback page", () => {
+      const props = {
+        navigate: () => {}
+      };
+      const page = new GamePage(props);
+      spyOn(page, "navigate");
+
+      page.topButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith("feedback", {
+        message: "success"
+      });
+    });
+  });
+
+  describe("#bottomButtonEvent", () => {
+    it("goes to feedback page", () => {
+      const props = {
+        navigate: () => {}
+      };
+      const page = new GamePage(props);
+      spyOn(page, "navigate");
+
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith("feedback", {
+        message: "try again"
+      });
+    });
   });
 });

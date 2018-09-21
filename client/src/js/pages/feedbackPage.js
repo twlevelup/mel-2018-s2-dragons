@@ -8,6 +8,10 @@ class FeedbackPage extends BasePage {
     };
     return compiledTemplate(context);
   }
+
+  rightButtonEvent() {
+    this.navigate("game");
+  }
 }
 
 module.exports = FeedbackPage;

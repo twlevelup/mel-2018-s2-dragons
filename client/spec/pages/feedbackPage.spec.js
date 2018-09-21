@@ -13,4 +13,17 @@ describe("The Feedback Page", () => {
       expect(page.template()).toContain("Success");
     });
   });
+
+  describe("#rightButtonEvent", () => {
+    it("goes back to the game page", () => {
+      const props = {
+        navigate: () => {}
+      };
+      const page = new FeedbackPage(props);
+      spyOn(page, "navigate");
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith("game");
+    });
+  });
 });
