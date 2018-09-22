@@ -26,4 +26,17 @@ describe("The Feedback Page", () => {
       expect(page.navigate).toHaveBeenCalledWith("gamePage");
     });
   });
+
+  describe("#leftButtonEvent", () => {
+    it("goes to home page", () => {
+      const props = {
+        navigate: () => {}
+      };
+      const page = new FeedbackPage(props);
+      spyOn(page, "navigate");
+
+      page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith("/");
+    });
+  });
 });

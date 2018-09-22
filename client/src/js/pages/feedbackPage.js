@@ -12,6 +12,10 @@ class FeedbackPage extends BasePage {
   rightButtonEvent() {
     this.navigate("gamePage");
   }
+
+  leftButtonEvent() {
+    this.navigate("/");
+  }
 }
 
 module.exports = FeedbackPage;

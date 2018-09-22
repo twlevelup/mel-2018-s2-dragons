@@ -19,5 +19,9 @@ class GamePage extends BasePage {
   bottomButtonEvent() {
     this.navigate("feedback", { message: "try again" });
   }
+
+  leftButtonEvent() {
+    this.navigate("/");
+  }
 }
 module.exports = GamePage;
