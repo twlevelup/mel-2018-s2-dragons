@@ -26,7 +26,7 @@ describe("GameHomePage", () => {
     });
   });
 
-  describe('#rightButtonEvent', () => {
+  describe('#bottomButtonEvent', () => {
     it('goes to game page', () => {
       const props = {
         navigate: () => { },
@@ -34,7 +34,7 @@ describe("GameHomePage", () => {
       const page = new GameHomePage(props);
       spyOn(page, 'navigate');
 
-      page.rightButtonEvent();
+      page.bottomButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('gamePage');
     });
   });

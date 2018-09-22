@@ -14,7 +14,7 @@ class GameHomePage extends BasePage {
     this.navigate("/");
   }
 
-  rightButtonEvent() {
+  bottomButtonEvent() {
     this.navigate('gamePage');
   }
 }
