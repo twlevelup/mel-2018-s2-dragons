@@ -74,7 +74,7 @@ describe("gamePage", () => {
 
       page.bottomButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith("feedback", {
-        message: "try again", class: "try"
+        message: "Oops! Good Try", class: "try"
       });
     });
   });

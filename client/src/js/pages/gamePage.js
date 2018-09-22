@@ -17,7 +17,7 @@ class GamePage extends BasePage {
   }
 
   bottomButtonEvent() {
-    this.navigate("feedback", { message: "try again" , class : "try"});
+    this.navigate("feedback", { message: "Oops! Good Try" , class : "try"});
   }
 
   leftButtonEvent() {
