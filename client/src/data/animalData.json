@@ -1,27 +1,27 @@
 {
   "animals": [
     {
-      "filename": "/client/src/images/cat.png",
+      "filename": "cat.png",
       "animal": "cat"
     },
     {
-      "filename": "/client/src/images/dog.png",
+      "filename": "dog.png",
       "animal": "dog"
     },
     {
-      "filename": "/client/src/images/hen.png",
+      "filename": "hen.png",
       "animal": "hen"
     },
     {
-      "filename": "/client/src/images/pig.png",
+      "filename": "pig.png",
       "animal": "pig"
     },
     {
-      "filename": "/client/src/images/cow.png",
+      "filename": "cow.png",
       "animal": "cow"
     },
     {
-      "filename": "/client/src/images/rat.png",
+      "filename": "rat.png",
       "animal": "rat"
     }
   ]

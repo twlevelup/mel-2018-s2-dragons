@@ -31,7 +31,7 @@ describe("gamePage", () => {
     const animalImages = animalData.animals.map(
       animalObject => animalObject.filename
     );
-    const imageIsDisplayed = animalImages.includes(page.gameData.image);
+    const imageIsDisplayed = animalImages.includes(page.gameData.filename);
 
     expect(imageIsDisplayed).toEqual(true);
   });

@@ -9,7 +9,8 @@ const randomizer = context => {
   }
 
   const data = {
-    image: animalData[randomIndex].filename,
+    filename: animalData[randomIndex].filename,
+    image: require(`../images/${animalData[randomIndex].filename}`),
     incorrectOption: animalData[anotherIndex].animal,
     correctOption: animalData[randomIndex].animal
   };
