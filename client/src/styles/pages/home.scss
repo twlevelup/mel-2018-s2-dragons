@@ -24,7 +24,39 @@
     width: 120px;
     padding-left: 70px;
 }
-
-
-
-
+.option{
+	text-align: center;
+    color: #fb9716;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.animalImg{
+    width: 210px;
+    height: 150px;
+    margin: 0px 0px 0px 11px;
+	}
+.option2{
+	margin-top:1em;
+}
+.try{
+    position: absolute;
+    top: 40%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    left: 26%;
+	}
+.try{
+	color: red;
+}
+.success{
+	color:#40cc20;
+	position: absolute;
+    top: 40%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    left: 21%;
+	}

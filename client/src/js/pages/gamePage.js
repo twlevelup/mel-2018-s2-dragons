@@ -13,11 +13,11 @@ class GamePage extends BasePage {
   }
 
   topButtonEvent() {
-    this.navigate("feedback", { message: "success" });
+    this.navigate("feedback", { message: "well done!" , class : "success"});
   }
 
   bottomButtonEvent() {
-    this.navigate("feedback", { message: "try again" });
+    this.navigate("feedback", { message: "try again" , class : "try"});
   }
 
   leftButtonEvent() {
