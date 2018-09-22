@@ -23,7 +23,7 @@ describe("The Feedback Page", () => {
       spyOn(page, "navigate");
 
       page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith("game");
+      expect(page.navigate).toHaveBeenCalledWith("gamePage");
     });
   });
 });

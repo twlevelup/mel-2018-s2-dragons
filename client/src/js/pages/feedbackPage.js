@@ -10,7 +10,7 @@ class FeedbackPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate("game");
+    this.navigate("gamePage");
   }
 }
 
