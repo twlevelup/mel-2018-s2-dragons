@@ -23,7 +23,7 @@ describe("gamePage", () => {
 
   it("should have image tag", () => {
     const page = new GamePage();
-    expect(page.template()).toContain("img src");
+    expect(page.template()).toContain("img class");
   });
 
   it("should have a image in the animal data json file", () => {
@@ -46,7 +46,7 @@ describe("gamePage", () => {
 
       page.topButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith("feedback", {
-        message: "success"
+        message: "well done!" , class: "success"
       });
     });
   });
@@ -74,7 +74,7 @@ describe("gamePage", () => {
 
       page.bottomButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith("feedback", {
-        message: "try again"
+        message: "try again", class: "try"
       });
     });
   });
